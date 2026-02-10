@@ -1,26 +1,18 @@
-function calcularProduto(precoOriginal, temDesconto) {
+const numeroRandomizado = Math.round(Math.random() * 100);
 
-    const desconto = 0.10;
-    const icms = Math.random() * (25 - 12) + 12;
+let tentativas = 0;
+let escolha;
 
-    let precoBase = precoOriginal;
+while (escolha !== numeroRandomizado) {
 
-    let precoComDesconto = precoOriginal;
+    escolha = parseInt(prompt("Escolha um número de 1 a 100:"));
+    tentativas++;
 
-    if (temDesconto == true) {
-        precoComDesconto = precoOriginal - (precoOriginal * desconto);
-        precoBase = precoComDesconto; 
+    if (escolha > numeroRandomizado) {
+        alert(`O número escolhido (${escolha}) é maior que o número randomizado.`);
+    } else if (escolha < numeroRandomizado) {
+        alert(`O número escolhido (${escolha}) é menor que o número randomizado.`);
+    } else {
+        alert(`Parabéns você acertou o número ${numeroRandomizado} em ${tentativas} tentativas.`);
     }
-
-    const valorImposto = precoBase * (icms / 100);
-    const precoFinal = precoBase + valorImposto;
-
-    return `Preco Original: R$ ${precoOriginal.toFixed(2)} | Desconto: ${temDesconto} | Preço com Desconto: R$ ${precoComDesconto.toFixed(2)} | Imposto: ${icms.toFixed(2)}% | Total: R$ ${precoFinal.toFixed(2)}`;
 }
-
-
-console.log("Produto com Desconto")
-console.log(calcularProduto(100.00, true));
-console.log()
-console.log("Produto sem desconto")
-console.log(calcularProduto(100.00, false));
