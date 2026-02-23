@@ -1,28 +1,89 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 
 <head>
-    <title>Portifólio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <title>Portfólio</title>
 </head>
 
 <body>
-    <img src="assets/images/foto.jpeg" alt="Foto de perfil. " />
-    <h1>Meu nome é Eduardo</h1>
-    <h2>Desenvolvedor Full Stack</h2>
-    <p>Gosto de criar sistemas completos e sites para <i>internet</i><br /> do <strong>backend ao frontend</strong>,
-        buscando soluções eficientes.</p>
 
-    <a href="https://www.linkedin.com/in/eduardo-vinicius-jorge/" target="_blank">Linkedin</a>
-    <br />
-    <a href="https://github.com/EduardoViniciusJ" target="_blank">Github</a>
-    <br />
-    <a href="html-css/cafeteria/index.html" target="_blank">Cafeteria EDV</a>
-    <br />
-    <a href="html-css/cafeteria/form-cafeteria.html" target="_blank">Contato Cafeteria</a>
-    <br />
-    <a href="html-css/livraria-store-table/index.html" target="_blank">Livraria Store</a>
-    <br />
-    <a href="html-css/podcast/index.html" target="_blank">Podcast</a>
+    <header>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="https://www.linkedin.com/in/eduardo-vinicius-jorge/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/EduardoViniciusJ" target="_blank">GitHub</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <section class="photo-section">
+            <img src="assets/images/foto.jpeg" alt="Foto de perfil de Eduardo Vinícius Jorge">
+        </section>
+
+        <section class="about-section">
+            <h2>Sobre Mim</h2>
+            <p>Estudante de Engenharia de Software | Desenvolvedor Full Stack</p>
+            <p>
+                Tenho interesse em desenvolvimento web e cibersegurança. Sou motivado a explorar e aprender
+                continuamente
+                sobre diferentes áreas, incluindo novas linguagens, frameworks e tecnologias.
+            </p>
+            <br />
+            <h2>Habilidades Técnicas</h2>
+
+            <div class="tech-grid">
+                <div>
+                    <h4>Backend</h4>
+                    <ul>
+                        <li>.NET / C#</li>
+                        <li>NestJS</li>
+                        <li>APIs REST</li>
+                        <li>Postman</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>Frontend</h4>
+                    <ul>
+                        <li>Angular</li>
+                        <li>Blazor</li>
+                        <li>TypeScript</li>
+                        <li>JavaScript</li>
+                        <li>HTML & CSS</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>Banco de Dados & Ferramentas</h4>
+                    <ul>
+                        <li>SQL Server</li>
+                        <li>Entity Framework</li>
+                        <li>Docker</li>
+                        <li>Git & GitHub</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>Projetos Alpar</h4>
+                    <ul>
+                        <li><a href="html-css/cafeteria/index.html" target="_blank">Cafeteria EDV</a></li>
+                        <li><a href="html-css/livraria-store-table/index.html" target="_blank">Livraria Store</a></li>
+                        <li><a href="html-css/podcast/index.html" target="_blank">Podcast</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; Eduardo Vinícius Jorge</p>
+    </footer>
+
 </body>
 
 </html>

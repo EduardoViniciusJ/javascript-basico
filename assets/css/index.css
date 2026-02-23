@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+h4 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.navbar {
+    display: flex;
+    padding: 10px;
+    background-color: #1e293b;
+    margin-bottom: 20px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    background-color: #1e293b;
+}
+
+.navbar li a {
+    display: block;
+    color: #f8fafc;
+    text-decoration: none;
+    padding: 14px 20px;
+}
+
+.navbar li a:hover {
+    background-color: #3b82f6;
+    color: #ffffff;
+}
+
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 40px;
+    padding: 40px;
+}
+
+.photo-section img {
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.about-section {
+    flex: 2;
+    padding: 40px;
+    color: #1e293b;
+}
+
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.tech-grid ul li a {
+    color: #0062ff;
+    text-decoration: none;
+}
+
+.site-footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #0f172a;
+    color: #e2e8f0;
+    margin-top: 20px;
+}
