@@ -5,98 +5,117 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cafeteria EDV</title>
+    <link rel="stylesheet" href="assets/css/index.css">
 </head>
 
 <body>
-    <h1>Cafeteria EDV</h1>
-    <h2>Cardápio</h2>
+
+    <header>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="https://eduardoviniciusj.github.io/alpar" target="_blank">Portfólio</a></li>
+                <li><a href="form-cafeteria.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
 
-    <table border="1px" cellspacing="0" cellpadding="10">
-        <thead>
-            <th>
-                Horários
-            </th>
-            <th>
-                Segunda
-            </th>
-            <th>
-                Terça
-            </th>
-            <th>
-                Quarta
-            </th>
-            <th>
-                Quinta
-            </th>
-            <th>
-                Sexta
-            </th>
-            <th>
-                Sábado
-            </th>
-            <th>
-                Domingo e <br />Feriados
-            </th>
-        </thead>
 
-        <tbody>
-            <tr>
-                <td><strong>Manha</strong></td>
-                <td>08:00<br />12:00</td>
-                <td rowspan="2">Fechado</td>
-                <td>08:00<br />12:00</td>
-                <td>08:00<br />12:00</td>
-                <td>08:00<br />12:00</td>
-                <td>08:00<br />12:00</td>
-                <td rowspan="2">08:00<br />12:00</td>
-            <tr>
-                <td><strong>Tarde</strong></td>
-                <td>14:00 <br />18:00</td>
-                <td>14:00 <br />18:00</td>
-                <td>14:00 <br />18:00</td>
-                <td>14:00 <br />18:00</td>
-                <td>14:00 <br />18:00</td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="container">
+        <main>
 
+            <h2>Horário de Funcionamento</h2>
 
-    <ul>
-        <li>
-            <h3>Bebidas</h3>
-            <ol>
-                <li><strong>Café Expresso</strong> - R$ 6,00</li>
-                <li><strong>Cappuccino</strong> - R$ 9,00</li>
-                <li><strong>Chocolate Quente</strong> - R$ 10,00</li>
-                <li><strong>Suco Natural</strong> - R$ 8,00</li>
-            </ol>
-        </li>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Horários</th>
+                        <th>Seg</th>
+                        <th>Ter</th>
+                        <th>Qua</th>
+                        <th>Qui</th>
+                        <th>Sex</th>
+                        <th>Sáb</th>
+                        <th>Dom/Feriados</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Manhã</strong></td>
+                        <td>08:00 - 12:00</td>
+                        <td rowspan="2">Fechado</td>
+                        <td>08:00 - 12:00</td>
+                        <td>08:00 - 12:00</td>
+                        <td>08:00 - 12:00</td>
+                        <td>08:00 - 12:00</td>
+                        <td rowspan="2">08:00 - 18:00</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Tarde</strong></td>
+                        <td>14:00 - 18:00</td>
+                        <td>14:00 - 18:00</td>
+                        <td>14:00 - 18:00</td>
+                        <td>14:00 - 18:00</td>
+                        <td>14:00 - 18:00</td>
+                    </tr>
+                </tbody>
+            </table>
 
-        <li>
-            <h3>Salgados</h3>
-            <ol>
-                <li><strong>Pão de Queijo</strong> - R$ 5,00</li>
-                <li><strong>Coxinha</strong> - R$ 7,00</li>
-                <li><strong>Sanduíche</strong> - R$ 12,00</li>
-                <li><strong>Empadão</strong> - R$ 6,50</li>
-            </ol>
-        </li>
+            <section>
 
-        <li>
-            <h3>Doces</h3>
-            <ol>
-                <li><strong>Bolo de Chocolate</strong> - R$ 8,00</li>
-                <li><strong>Cheesecake</strong> - R$ 12,00</li>
-                <li><strong>Torta de Limão</strong> - R$ 10,00</li>
-                <li><strong>Brownie</strong> - R$ 7,00</li>
-            </ol>
-        </li>
-    </ul>
+                <h2>Cardápio</h2>
 
-    <a href="form-cafeteria.html" target="_blank">Contanto</a>
-    <br />
-    <a href="https://eduardoviniciusj.github.io/alpar" target="_blank">Portfólio</a>
+                <div class="card-grid">
+
+                    <div class="card">
+                        <h3>Bebidas</h3>
+                        <ul>
+                            <li>Espresso <strong>R$ 10,20</strong></li>
+                            <li>Cappuccino <strong>R$ 14,50</strong></li>
+                            <li>Chocolate Quente <strong>R$ 13,00</strong></li>
+                            <li>Latte <strong>R$ 15,00</strong></li>
+                            <li>Mocha <strong>R$ 16,50</strong></li>
+                            <li>Chá Gelado <strong>R$ 11,00</strong></li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <h3>Salgados</h3>
+                        <ul>
+                            <li>Sanduíche Natural <strong>R$ 18,90</strong></li>
+                            <li>Pão de Queijo <strong>R$ 8,50</strong></li>
+                            <li>Torta de Frango <strong>R$ 16,00</strong></li>
+                            <li>Empada de Palmito <strong>R$ 9,50</strong></li>
+                            <li>Quiche de Queijo <strong>R$ 17,50</strong></li>
+                            <li>Wrap de Frango <strong>R$ 19,90</strong></li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <h3>Doces</h3>
+                        <ul>
+                            <li>Brownie <strong>R$ 12,90</strong></li>
+                            <li>Cheesecake <strong>R$ 15,50</strong></li>
+                            <li>Cookie <strong>R$ 9,90</strong></li>
+                            <li>Bolo de Cenoura <strong>R$ 11,90</strong></li>
+                            <li>Donut <strong>R$ 10,50</strong></li>
+                            <li>Torta de Limão <strong>R$ 14,90</strong></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <p class="alerta">
+                    Aviso: Alguns produtos podem conter glúten, leite, e derivados.
+                </p>
+
+            </section>
+        </main>
+    </div>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 - Eduardo Vinicius Jorge</p>
+    </footer>
 
 </body>
 
